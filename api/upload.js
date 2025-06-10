@@ -1,7 +1,7 @@
 import { Octokit } from "@octokit/rest";
 
 const github = new Octokit({ auth: process.env.GITHUB_TOKEN });
-const repo = "DEIN-GITHUB-NAME/roblox-script-backup";
+const repo = "roblox-server-analyzer";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).send("Only POST allowed");
